@@ -10,7 +10,9 @@ $staking
 $network
 $governance
 # send
-
+Send.Tokensend = Send::Address
+Send.Tokensend = Send::Username 
+Send.Packet = Send::`ping`
 # request
 
 # user
