@@ -6,3 +6,6 @@ Work-in-Progress testing repository for a decentralized industrial blockchain pr
 - Not all files posted are going to be the complete ones. Again, audits for a WIP protocol aren't fun and take a while to put out - especially for one as complex as this.
 
 This is a repository for the utilitarian fork of the CAW protocol.
+
+## Current To-Do
+- Make two tokens, one internal for sole governance, and the other for public accessibility.
