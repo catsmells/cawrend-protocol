@@ -13,6 +13,7 @@ Send = lambda { `send.to " "` }
 Request lambda { `request.from " "` }
 Transaction = Tx
 Transaction = Tx lambda { `tx.of " "` }
+Tx.Recipient = `received by`
 # send
 Send.Tokensend = Send::Address
 Send.Tokensend = Send::Username 
@@ -27,8 +28,10 @@ Resquest.Username = Request::Username
 # transaction
 Tx.GetID = Transaction::ID
 Tx.GetInvolved = Transaction::Involved # get users involved in specified transaction
+Tx.Status = if Tx::Status = True then return ("Complete") else ("Aborted")
+Tx.Target = Transaction::Target, puts TxMain.Recipient
 # network
-IsNetworkLive = `tuup ping network`
+IsNetworkLive = if Network::Live = True then return (200) else (500)
 # staking
 
 # governance
@@ -42,4 +45,5 @@ NFT.Address = NFT::Address
 NFT.Creator = NFT::Creator
 NFT.Publish = NFT::Publish
 NFT.Republish = NFT::Republish
+NFT.GetCost = NFT::GetCost
 # post
