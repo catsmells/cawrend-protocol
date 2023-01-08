@@ -2,6 +2,7 @@ $user
 $send
 $request
 $transaction
+@time
 $post
 $nft
 $address
@@ -9,6 +10,8 @@ $charfield
 $staking
 $network
 $governance
+Time = @time
+Time = lambda { @time }
 Information = lambda { address = $address; charfield = $charfield; transaction = $transaction; post = $post; nft = $nft; network = $network; user = $user; send = $send; request = $request; transaction }
 Send = lambda { `send.to " "` }
 Request lambda { `request.from " "` }
@@ -38,9 +41,11 @@ Tx.PullInfo = Transaction::Information
 # network
 IsNetworkLive = if Network::Live = True then return (200) else (500)
 Request.Peers = Network::Peers # returns in format `| address | username | amount_in_wallet |`
+Request.Time = Network::Time # grab timestamp for tx, user interaction, etc. in UNIX time
 # nft
 NFT.Address = NFT::Address
 NFT.Creator = NFT::Creator
 NFT.Publish = NFT::Publish
 NFT.Republish = NFT::Republish
 NFT.GetCost = NFT::GetCost
+NFT.Publish.Time = NFT::Network.Time
