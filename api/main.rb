@@ -38,18 +38,9 @@ Tx.PullInfo = Transaction::Information
 # network
 IsNetworkLive = if Network::Live = True then return (200) else (500)
 Request.Peers = Network::Peers # returns in format `| address | username | amount_in_wallet |`
-# staking
-
-# governance
-
-# charfield
-
-# address
-
 # nft
 NFT.Address = NFT::Address
 NFT.Creator = NFT::Creator
 NFT.Publish = NFT::Publish
 NFT.Republish = NFT::Republish
 NFT.GetCost = NFT::GetCost
-# post
