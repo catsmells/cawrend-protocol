@@ -24,16 +24,20 @@ Request.Tokenrequest = Request::Address
 Request.Tokenrequest = Request::Username
 Request.Tokenrequest = Request::`tuup ping`
 # user
-Resquest.Address = Request::Address
-Resquest.Username = Request::Username
+Request.Address = Request::Address
+Request.Username = Request::Username
+Request.Balance = Request::Balance
 # transaction
 Tx.GetID = Transaction::ID
+Tx.GetHistory = Address::History || Username::History
 Tx.GetInvolved = Transaction::Involved # get users involved in specified transaction
+Tx.GetPrice = Transaction::Price
 Tx.Status = if Tx::Status = True then return ("Complete") else ("Aborted")
 Tx.Target = Transaction::Target, puts TxMain.Recipient # return complete address, username, and Base64 output string
 Tx.PullInfo = Transaction::Information
 # network
 IsNetworkLive = if Network::Live = True then return (200) else (500)
+Request.Peers = Network::Peers # returns in format `| address | username | amount_in_wallet |`
 # staking
 
 # governance
