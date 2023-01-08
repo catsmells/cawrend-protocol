@@ -9,6 +9,7 @@ $charfield
 $staking
 $network
 $governance
+Information = lambda { address = $address; charfield = $charfield; transaction = $transaction; post = $post; nft = $nft; network = $network; user = $user; send = $send; request = $request; transaction }
 Send = lambda { `send.to " "` }
 Request lambda { `request.from " "` }
 Transaction = Tx
@@ -29,7 +30,8 @@ Resquest.Username = Request::Username
 Tx.GetID = Transaction::ID
 Tx.GetInvolved = Transaction::Involved # get users involved in specified transaction
 Tx.Status = if Tx::Status = True then return ("Complete") else ("Aborted")
-Tx.Target = Transaction::Target, puts TxMain.Recipient
+Tx.Target = Transaction::Target, puts TxMain.Recipient # return complete address, username, and Base64 output string
+Tx.PullInfo = Transaction::Information
 # network
 IsNetworkLive = if Network::Live = True then return (200) else (500)
 # staking
