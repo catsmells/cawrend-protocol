@@ -13,3 +13,8 @@ cwgl.r do |negexec|
   next if negexec[:burn] == 'reset'
   opp = opp.confirmtr
 end
+negexec = [
+  {:burn => 'refAPI', :send => 'address'},
+  {:burn => 'utilend', :send => 'address.ex'}
+  {:set => 'nuke', :set => 'remcwd'}
+]
