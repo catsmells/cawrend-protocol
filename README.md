@@ -9,3 +9,7 @@ This is a repository for the utilitarian fork of the CAW protocol.
 
 ## Current To-Do
 ~~- Make two tokens, one internal for sole governance, and the other for public accessibility.~~
+
+## TUUP Token Publishing To-Do
+
+Initial Supply: 314,159,265,359 TUUP
