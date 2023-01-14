@@ -8,4 +8,4 @@ Work-in-Progress testing repository for a decentralized industrial blockchain pr
 This is a repository for the utilitarian fork of the CAW protocol.
 
 ## Current To-Do
-- Make two tokens, one internal for sole governance, and the other for public accessibility.
+~~- Make two tokens, one internal for sole governance, and the other for public accessibility.~~
