@@ -13,3 +13,11 @@ This is a repository for the utilitarian fork of the CAW protocol.
 ## TUUP Token Publishing To-Do
 
 Initial Supply: 314,159,265,359 TUUP
+
+## Features
+
+- Works in tangent with cawserver.api (sub-project).
+- Features defined within [here](https://tuupdocs.neocities.org/concept/).
+- Posting to chain defined by a sub-API.
+- Utilization by token defined by a chain-neutral token.
+- NFT Minting, token burning, etc.
